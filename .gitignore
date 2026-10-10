@@ -12,3 +12,6 @@ DerivedData/
 .idea/
 *.swp
 *~
+
+# Keep large local recordings out of git; use compressed mp4 in docs/demo
+*.mov

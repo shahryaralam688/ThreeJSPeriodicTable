@@ -14,7 +14,6 @@ https://github.com/shahryaralam688/ThreeJSPeriodicTable/raw/main/docs/demo/perio
   Your browser does not support the video tag. <a href="docs/demo/periodic-table-demo.mp4">Download the demo</a>.
 </video>
 
-Full-resolution screen recording (Simulator): [`docs/demo/Screen-Recording-2026-10-10.mov`](docs/demo/Screen-Recording-2026-10-10.mov)
 
 | Table | Sphere | Helix | Detail |
 | :---: | :---: | :---: | :---: |
@@ -97,7 +96,6 @@ ThreeJSPeriodicTable/
 │   └── jsm/
 └── docs/demo/                          # Screen recording + stills
     ├── periodic-table-demo.mp4
-    ├── Screen-Recording-2026-10-10.mov
     └── preview-*.jpg
 ```
 
