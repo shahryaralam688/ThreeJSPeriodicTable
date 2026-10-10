@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Periodic Table — Neumorphic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="info">
+			<div class="brand-chip"><strong>Elements</strong> · soft table</div>
+		</div>
+
+		<div id="container"></div>
+
+		<button id="reset-view" type="button" aria-label="Reset view to center" title="Reset">
+			<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+				<path fill="currentColor" d="M12 5V2L8 6l4 4V7c2.76 0 5 2.24 5 5a5 5 0 0 1-8.9 3.1L6.7 16.5A7 7 0 0 0 19 12c0-3.87-3.13-7-7-7zm-7 7c0-.34.03-.67.08-1H3.06c-.04.33-.06.66-.06 1a7 7 0 0 0 12.3 4.5l-1.4-1.4A5 5 0 0 1 5 12z"/>
+			</svg>
+		</button>
+
+		<div id="menu">
+			<button id="table" type="button">Table</button>
+			<button id="sphere" type="button">Sphere</button>
+			<button id="helix" type="button">Helix</button>
+			<button id="grid" type="button">Grid</button>
+		</div>
+
+		<div id="detail-overlay" aria-hidden="true">
+			<div class="detail-sheet" id="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="d-name">
+				<div class="detail-handle"></div>
+				<div class="detail-top">
+					<div class="detail-badge">
+						<span class="num" id="d-num">1</span>
+						<span class="sym" id="d-sym">H</span>
+					</div>
+					<div class="detail-title">
+						<h2 id="d-name">Hydrogen</h2>
+						<p class="meta" id="d-meta">Group 1 · Period 1</p>
+						<span class="chip" id="d-chip">Reactive Nonmetal</span>
+					</div>
+					<button class="detail-close" id="detail-close" type="button" aria-label="Close">×</button>
+				</div>
+
+				<div class="detail-stats">
+					<div class="stat-card">
+						<span class="label">Mass</span>
+						<span class="value" id="d-mass">1.00794</span>
+					</div>
+					<div class="stat-card">
+						<span class="label">Electrons</span>
+						<span class="value" id="d-electrons">1</span>
+					</div>
+					<div class="stat-card">
+						<span class="label">Shells</span>
+						<span class="value" id="d-shells">1</span>
+					</div>
+				</div>
+
+				<section class="detail-section">
+					<h3>About</h3>
+					<p id="d-summary"></p>
+				</section>
+
+				<section class="detail-section">
+					<h3>Atomic Structure</h3>
+					<div class="atom-stage" id="d-atom"></div>
+				</section>
+
+				<section class="detail-section">
+					<h3>Features</h3>
+					<ul class="feature-list" id="d-features"></ul>
+				</section>
+
+				<section class="detail-section">
+					<h3>Uses &amp; Applications</h3>
+					<div class="uses-grid" id="d-uses"></div>
+				</section>
+			</div>
+		</div>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
